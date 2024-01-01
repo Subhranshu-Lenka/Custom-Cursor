@@ -1,0 +1,1 @@
+window.alert("Let's go")
