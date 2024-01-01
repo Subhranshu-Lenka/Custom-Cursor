@@ -11,4 +11,16 @@ window.addEventListener("scroll", () => {
     // console.log(e);
     const fromTop = parseInt(cursor.getAttribute("data-fromTop"));
     cursor.style.top = scrollY + fromTop + "px";
+});
+
+window.addEventListener("click", () => {
+    if (cursor.classList.contains("click")) {
+        cursor.classList.remove("click");
+        setTimeout(() => cursor.classList.add("click"), 0);
+        // cursor.classList.add("click");
+    }
+    else {
+        cursor.classList.add("click");
+
+    }
 })
